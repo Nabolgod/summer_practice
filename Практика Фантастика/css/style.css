@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Описание шапки сайта */
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between; /* Прижимаем лого и меню по бокам */
+}
+
+.logo {
+    background-color: beige;
+}
+
+.menu {
+    background-color: brown;
+}
+
+.button-menu {
+    background-color: rgb(91, 63, 29);
+}
+
+/* Описание страницы */
+main {
+    background-color: blue;
+}
+
+/* Описание слайдера с короткой информацией */
+.start-info {
+    background-color: red;
+    display: flex;
+}
+
+.cover-movie {
+    background-color: rgb(224, 117, 117);
+}
+
+.cover {
+    width: auto;
+    height: auto;
+}
+
+.start-info .short-description {
+    background-color: rgb(128, 128, 217);
+}
+
+/* Описание подробной карточки фильма */
+.collection-movie {
+    background-color: rgb(65, 25, 65);
+}
+
+.card-movie {
+    background-color: rgb(138, 83, 189);
+}
+
+.video-info {
+    background-color: azure;
+    display: flex;
+}
+
+.trailer {
+    background-color: aquamarine;
+}
+
+.short-description {
+    background-color: rgb(69, 193, 116);
+}
+
+.full-description {
+    background-color: rgb(175, 160, 160);
+}
+/* Описание подвала */
+footer {
+    background-color: blueviolet;
+}
