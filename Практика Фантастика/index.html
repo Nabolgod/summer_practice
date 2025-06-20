@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Кинообзоры</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            Я логотип
-        </div>
-        <div class="menu">
-            <button class="button-menu">
-                Я кнопка
-            </button>
-        </div>
+    <header class="header">
+        <div class="logo">FilmCritic</div>
+        <nav class="menu">
+            <button class="menu-button">Меню</button>
+        </nav>
     </header>
-    <main>
-        <div class="start-info">
-            <div class="cover-movie">
-                <img class="cover" src="#" alt="Обложка фильма" width="400" height="400">
-            </div>
-            <div class="short-description">
-                Текст описания фильма и технологии
-            </div>
-        </div>
-        <div class="collection-movie">
-            <div class="card-movie">
-                <div class="video-info">
-                    <div class="trailer">
-                        <video src="#" width="100" height="50">
-                        </video>
-                    </div>
-                    <div class="short-description">
-                        Название, актёры, кинопоиск
+
+    <main class="main">
+       <!-- Слайдер главных фильмов -->
+        <section class="featured-slider">
+            <div class="slider-container">
+                <!-- Слайд 1 -->
+                <div class="featured-movie active">
+                    <img class="featured-cover" src="https://via.placeholder.com/600x400/333/fff?text=Интерстеллар" alt="Обложка Интерстеллар">
+                    <div class="featured-description">
+                        <h2>Интерстеллар</h2>
+                        <p>Фантастика, драма. Режиссёр: Кристофер Нолан</p>
+                        <p>Рейтинг: ★ 8.6</p>
                     </div>
                 </div>
-                <div class="full-description">
-                    Подробное описание технологии
+
+                <!-- Слайд 2 -->
+                <div class="featured-movie">
+                    <img class="featured-cover" src="https://via.placeholder.com/600x400/555/fff?text=Начало" alt="Обложка Начало">
+                    <div class="featured-description">
+                        <h2>Начало</h2>
+                        <p>Фантастика, триллер. Режиссёр: Кристофер Нолан</p>
+                        <p>Рейтинг: ★ 8.7</p>
+                    </div>
+                </div>
+
+                <!-- Слайд 3 -->
+                <div class="featured-movie">
+                    <img class="featured-cover" src="https://via.placeholder.com/600x400/777/fff?text=Довод" alt="Обложка Довод">
+                    <div class="featured-description">
+                        <h2>Довод</h2>
+                        <p>Боевик, sci-fi. Режиссёр: Кристофер Нолан</p>
+                        <p>Рейтинг: ★ 7.5</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card-movie">
-                <div class="video-info">
-                    <div class="trailer">
-                        <video src="#" width="100" height="50">
-                        </video>
-                    </div>
-                    <div class="short-description">
-                        Название, актёры, кинопоиск
-                    </div>
+            <!-- Навигация слайдера -->
+            <div class="slider-nav">
+                <button class="slider-prev">←</button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <div class="full-description">
-                    Подробное описание технологии
-                </div>
+                <button class="slider-next">→</button>
             </div>
-        </div>
+        </section>
+
+        <section class="movie-collection">
+            <article class="movie-card">
+                <div class="movie-preview">
+                    <video class="movie-trailer" src="#" controls width="400" poster="https://via.placeholder.com/250x140"></video>
+                    <div class="movie-meta">
+                        <h3>Начало</h3>
+                        <p>Леонардо ДиКаприо, 2010</p>
+                        <p>★ 8.7</p>
+                    </div>
+                </div>
+                <div class="movie-details">
+                    <p>Фильм о проникновении в подсознание через сны.</p>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="movie-preview">
+                    <video class="movie-trailer" src="#" controls width="400" poster="https://via.placeholder.com/250x140"></video>
+                    <div class="movie-meta">
+                        <h3>Довод</h3>
+                        <p>Джон Дэвид Вашингтон, 2020</p>
+                        <p>★ 7.5</p>
+                    </div>
+                </div>
+                <div class="movie-details">
+                    <p>Шпионский боевик с инверсией времени.</p>
+                </div>
+            </article>
+
+           
+        </section>
     </main>
-    <footer>Я футер</footer>
+
+    <footer class="footer">
+        <p>© 2024 Кинообзоры для университета</p>
+    </footer>
+    <script src="js/slider.js"></script>
 </body>
 </html>
